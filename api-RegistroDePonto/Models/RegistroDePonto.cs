@@ -8,16 +8,21 @@ namespace api_RegistroDePonto.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+        
+        [Required]        
         public string NomeFuncionario { get; set; }
+        
         [Required]
-        public DateTime EntradaManha { get; set; }
+        public TimeSpan EntradaManha { get; set; }
+        
         [Required]
-        public DateTime SaidaManha { get; set; }
+        public TimeSpan SaidaManha { get; set; }
+        
         [Required]
-        public DateTime EntradaTarde { get; set; }
+        public TimeSpan EntradaTarde { get; set; }
+        
         [Required]
-        public DateTime SaidaTarde { get; set; }
+        public TimeSpan SaidaTarde { get; set; }
 
     }
 }
